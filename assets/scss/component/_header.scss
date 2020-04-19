@@ -125,7 +125,7 @@ header {
 								li {
 									margin-left: 80px;
 
-									button {
+									button, a {
 										padding: 0;
 										height: auto;
 										text-align: right;
@@ -134,6 +134,7 @@ header {
 										background: none;
 										font: 500 15px $fontFamily;
 										color: $white;
+										text-decoration: none;
 										@include transition;
 										@include hoverOpacity;
 									}

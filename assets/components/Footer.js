@@ -16,7 +16,7 @@ function Footer() {
 
         		<section className="copyright">
         			<div className="inner">
-        				<small>&copy; 2020 UI Design by MR M</small>
+        				<small>&copy; 2020 UI Design by MARK CALDERON</small>
         			</div>
         		</section>
         	</div>

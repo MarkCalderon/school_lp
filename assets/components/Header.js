@@ -29,13 +29,14 @@ class Header extends React.Component {
 			        						<li><button>Message from the Principal</button></li>
 		        						</Link>
 		        						<Link to="/mission">
-			        						<li><button href="./about/mission/">Vision and Mission</button></li>
+			        						<li><button>Vision and Mission</button></li>
 		        						</Link>
 		        						<Link to="/history">
-			        						<li><button href="./about/history/">History</button></li>
+			        						<li><button>History</button></li>
 		        						</Link>
-		        						<li><button href="./about/credentials/">Accreditation</button></li>
-		        						<li><button href="./about/partners/">Partners</button></li>
+		        						<Link to="/partner">
+			        						<li><button>Partners</button></li>
+		        						</Link>
 		        						<li><button href="./about/staff/">Staff</button></li>
 		        					</ul>
 		        					<p><span>EDUCATION ⬤</span></p>
@@ -52,24 +53,25 @@ class Header extends React.Component {
 		        				</div>
 		        			</div>
 		        		</li>
-		        		<li data-scroll="#news" className="link__item no__menu">
-		        			<button><span>NEWS</span></button>
-		        		</li>
+		        		<Link to="/">
+			        		<li data-scroll="#news" className="link__item no__menu">
+			        			<button><span>NEWS</span></button>
+			        		</li>
+		        		</Link>
 		        		<li data-menu="#menu03" className="link__item">
 		        			<button><span>Inquiry</span></button>
 		        			<div id="#menu03" className="menu__container">
 		        				<div className="inner__menu">
 		        					<p><span>SCHOOL SERVICE ⬤</span></p>
 		        					<ul className="inner__list">
-		        						<li><button href="./">SCHOOL CALENDAR</button></li>
+		        						<li><a target="_blank" href="http://www.smsarjanais.edu.bn/wp-content/uploads/2020/02/2020-Academic-Calendar-for-parents.pdf">SCHOOL CALENDAR</a></li>
 		        						<li><button href="#">NEW/RENEWAL STUDENT ID</button></li>
 		        					</ul>
-		        					<p><span>FORMS ⬤</span></p>
+		        					<p><span>DOWNLOADABLE FORMS ⬤</span></p>
 		        					<ul className="inner__list">
-		        						<li><button href="./">NEW/RENEWAL STUDENT APPLICATION</button></li>
-		        						<li><button href="#">STUDENT PASS</button></li>
-		        						<li><button href="#">LEAVE/MEDICAL LEAVE CERTIFICATE</button></li>
-		        						<li><button href="#">INQUIRY/SUGGESTION/FEEDBACK</button></li>
+		        						<li><a target="_blank" href="http://www.smsarjanais.edu.bn/wp-content/uploads/2018/08/SMSIS-Enrollment-Form.pdf">NEW/RENEWAL STUDENT APPLICATION</a></li>
+		        						<li><a target="_blank" href="http://www.smsarjanais.edu.bn/wp-content/uploads/2018/08/Expression-of-Interest-Form.pdf">EXPRESSION OF INTEREST</a></li>
+		        						<li><a target="_blank" href="http://www.smsarjanais.edu.bn/wp-content/uploads/2018/07/noticeofwithdrawal.pdf">WITHDRAWAL NOTICE</a></li>
 		        					</ul>
 		        					<p><span>OTHERS ⬤</span></p>
 		        					<ul className="inner__list">

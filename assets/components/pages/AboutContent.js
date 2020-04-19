@@ -11,6 +11,7 @@ class AboutContent extends React.Component {
 						<div className="inner">
 							<div className="kv__container">
 								<h1>MESSAGE FROM THE PRINCIPAL</h1>
+								<div className="image" style={{ backgroundImage: "url('http://www.smsarjanais.edu.bn/wp-content/uploads/2018/08/smartclassroom2.jpg')"}}></div>
 							</div>
 						</div>
 					</section>

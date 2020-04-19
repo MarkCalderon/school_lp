@@ -1,6 +1,6 @@
 import React from 'react'
-import 'swiper/css/swiper.min.css'
-import Swiper from "swiper"
+// import 'swiper/dist/css/swiper.min.css'
+// import Swiper from "swiper"
 
 class TopContent extends React.Component {
 
@@ -130,19 +130,19 @@ class TopContent extends React.Component {
 						<div className="inner">
 							<div className="box__content study__content">
 								<a href="#">
-									<div className="box__content__image" style={{ backgroundImage: "url: ('http://www.smsarjanais.edu.bn/wp-content/uploads/2018/08/Library-3-1.jpg')"}}></div>
+									<div className="box__content__image" style={ { backgroundImage: "url('http://www.smsarjanais.edu.bn/wp-content/uploads/2018/08/Library-3-1.jpg')"}}>wqdqwqdq</div>
 									<div className="box__content__link"><span>Study at SMSIS</span></div>
 								</a>
 							</div>
 							<div className="box__content--col__01 tel__content">
 								<a data-modal="#request">
-									<div className="box__content__image" style={{ backgroundImage: "url: ('http://www.smsarjanais.edu.bn/wp-content/uploads/2018/09/ICT-Lab-SMSIS-5.jpeg')"}}></div>
+									<div className="box__content__image" style={{ backgroundImage: "url('http://www.smsarjanais.edu.bn/wp-content/uploads/2018/09/ICT-Lab-SMSIS-5.jpeg')"}}></div>
 									<div className="box__content__link"><span>REQUEST FORMS</span></div>
 								</a>
 							</div>
 							<div className="box__content--col__02 email__content">
 								<a href="#">
-									<div className="box__content__image" style={{ backgroundImage: "url: ('http://www.smsarjanais.edu.bn/wp-content/uploads/2018/09/ICT-Lab-SMSIS-6.jpeg')"}}></div>
+									<div className="box__content__image" style={{ backgroundImage: "url('http://www.smsarjanais.edu.bn/wp-content/uploads/2018/09/ICT-Lab-SMSIS-6.jpeg')"}}></div>
 									<div className="box__content__link"><span>SEND INQUIRY</span></div>
 								</a>
 							</div>

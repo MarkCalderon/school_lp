@@ -3,7 +3,7 @@ import React from 'react'
 class HistoryContent extends React.Component {
 
 	render() {
-		return(
+		return (
 			<main className="other">
 				<div className="inner">
 					<section className="kv">

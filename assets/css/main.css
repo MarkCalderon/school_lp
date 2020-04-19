@@ -379,10 +379,6 @@ main:before {
   height: 1px;
 }
 
-section[data-sv] {
-  visibility: hidden;
-}
-
 .fade-in {
   animation: opacityIn 2s forwards;
 }
@@ -558,7 +554,7 @@ header .inner .list.link .link__item .menu__container .inner__menu .inner__list 
 header .inner .list.link .link__item .menu__container .inner__menu .inner__list li {
   margin-left: 80px;
 }
-header .inner .list.link .link__item .menu__container .inner__menu .inner__list li button {
+header .inner .list.link .link__item .menu__container .inner__menu .inner__list li button, header .inner .list.link .link__item .menu__container .inner__menu .inner__list li a {
   padding: 0;
   height: auto;
   text-align: right;
@@ -567,9 +563,10 @@ header .inner .list.link .link__item .menu__container .inner__menu .inner__list 
   background: none;
   font: 500 15px "Roboto", sans-serif;
   color: #fff;
+  text-decoration: none;
   transition: 0.3s ease all;
 }
-header .inner .list.link .link__item .menu__container .inner__menu .inner__list li button:hover {
+header .inner .list.link .link__item .menu__container .inner__menu .inner__list li button:hover, header .inner .list.link .link__item .menu__container .inner__menu .inner__list li a:hover {
   opacity: 0.7;
 }
 header .menu__content {
@@ -1014,6 +1011,43 @@ footer .inner .copyright .inner small {
   font-size: 30px;
 }
 .other .inner .history .inner .content p small {
+  display: block;
+}
+.other .inner .partner {
+  padding: 0 20px;
+  box-sizing: border-box;
+  margin: 90px auto;
+  width: 100%;
+  max-width: 1140px;
+}
+.other .inner .partner.with__image .inner {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.other .inner .partner.with__image .inner figure {
+  max-width: 200px;
+}
+.other .inner .partner.with__image .inner .content {
+  padding: 0 0 20px;
+  margin-left: 60px;
+  box-sizing: border-box;
+  width: calc(100% - 360px);
+}
+.other .inner .partner.with__image .inner .content p {
+  font: 100 19px "Roboto", sans-serif;
+  text-align: justify;
+  line-height: 1.5;
+}
+.other .inner .partner.with__image .inner .content p:not(:first-child) {
+  margin-top: 20px;
+}
+.other .inner .partner.with__image .inner .content p strong {
+  font-weight: 500;
+  font-size: 30px;
+}
+.other .inner .partner.with__image .inner .content p small {
   display: block;
 }
 
