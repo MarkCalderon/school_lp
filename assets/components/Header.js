@@ -30,9 +30,12 @@ class Header extends React.Component {
 		        						<Link to="/about">
 			        						<li><button>Message from the Principal</button></li>
 		        						</Link>
-
-		        						<li><button href="./about/mission/">Vision and Mission</button></li>
-		        						<li><button href="./about/history/">History</button></li>
+		        						<Link to="/mission">
+			        						<li><button href="./about/mission/">Vision and Mission</button></li>
+		        						</Link>
+		        						<Link to="/history">
+			        						<li><button href="./about/history/">History</button></li>
+		        						</Link>
 		        						<li><button href="./about/credentials/">Accreditation</button></li>
 		        						<li><button href="./about/partners/">Partners</button></li>
 		        						<li><button href="./about/staff/">Staff</button></li>

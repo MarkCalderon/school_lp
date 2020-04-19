@@ -6,6 +6,7 @@ function Footer() {
         	<div className="inner">
         		<section className="map">
         			<div className="inner">
+                            
         			</div>
         		</section>
 

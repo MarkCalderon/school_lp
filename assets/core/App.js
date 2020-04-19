@@ -10,6 +10,8 @@ import './Common.js'
 // Specific Pages
 import TopContent from "./../components/pages/TopContent"
 import AboutContent from "./../components/pages/AboutContent"
+import VisionContent from "./../components/pages/VisionContent"
+import HistoryContent from "./../components/pages/HistoryContent"
 
 class App extends React.Component {
 
@@ -21,6 +23,8 @@ class App extends React.Component {
             	<Switch>
             		<Route path="/" exact component={TopContent}/>
             		<Route path="/about" component={AboutContent}/>
+                    <Route path="/mission" component={VisionContent}/>
+                    <Route path="/history" component={HistoryContent}/>
             	</Switch>
 
             	<Modal />
