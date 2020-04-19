@@ -2,15 +2,28 @@
   "name": "prepros-project",
   "version": "1.0.0",
   "scripts": {
-    "start": "webpack-dev-server --inline --dev --history-api-fallback"
+    "start": "webpack-dev-server --inline --history-api-fallback"
   },
+  "development": [
+    "ie 11",
+    "last 1 chrome version",
+    "last 1 firefox version",
+    "last 1 safari version"
+  ],
   "description": "This is a dummy package.json file created by Prepros to manage packages with NPM. You can edit this file to add your own information.",
   "dependencies": {
     "react": "^16.13.1",
+    "react-app-polyfill": "^1.0.6",
     "react-dom": "^16.13.1",
+    "react-iframe": "^1.8.0",
     "react-load-script": "0.0.6",
     "react-router-dom": "^5.1.2",
     "smoothscroll": "^0.4.0",
     "swiper": "^5.3.7"
+  },
+  "devDependencies": {
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
   }
 }

@@ -656,7 +656,7 @@ footer .inner .copyright .inner small {
   overflow: hidden;
 }
 .top .inner .kv .inner .slider .swiper-wrapper .swiper-slide img {
-  width: auto;
+  width: 100%;
   height: 100%;
 }
 .top .inner .intro {

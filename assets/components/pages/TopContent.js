@@ -100,16 +100,16 @@ class TopContent extends React.Component {
 							<div className="slider">
 								<div className="swiper-wrapper">
 									<div className="swiper-slide">
-			                            <img src="https://picsum.photos/2200/1000?random=1" />
+			                            <img src="http://www.smsarjanais.edu.bn/wp-content/uploads/2019/02/Main-Cover-1.jpg" />
 									</div>
 									<div className="swiper-slide">
-			                            <img src="https://picsum.photos/2200/1000?random=2" />
+			                            <img src="http://www.smsarjanais.edu.bn/wp-content/uploads/2019/02/Main-Cover-2.jpg" />
 									</div>
 									<div className="swiper-slide">
-			                            <img src="https://picsum.photos/2200/1000?random=3" />
+			                            <img src="http://www.smsarjanais.edu.bn/wp-content/uploads/2019/02/Main-Cover-3.jpg" />
 									</div>
 									<div className="swiper-slide">
-			                            <img src="https://picsum.photos/2200/1000?random=4" />
+			                            <img src="http://www.smsarjanais.edu.bn/wp-content/uploads/2019/02/Main-Cover-4.jpg" />
 									</div>
 								</div>
 							</div>
@@ -121,7 +121,7 @@ class TopContent extends React.Component {
 						<div className="inner">
 							<div className="title__box">
 								<h4>A Truly International Education Embedded with Uniquely Asian Values</h4>
-								<p>Test School is among the leading private international schools in Brunei Darussalam. We are an international school in a multicultural society that is committed to encouraging Excellence, instilling Global Citizenship, and promoting Social Awareness.</p>
+								<p>Seri Mulia Sarjana International School is among the leading private international schools in Brunei Darussalam. We are an international school in a multicultural society that is committed to encouraging Excellence, instilling Global Citizenship, and promoting Social Awareness.</p>
 							</div>
 						</div>
 					</section>
@@ -130,19 +130,19 @@ class TopContent extends React.Component {
 						<div className="inner">
 							<div className="box__content study__content">
 								<a href="#">
-									<div className="box__content__image"></div>
+									<div className="box__content__image" style={{ backgroundImage: "url: ('http://www.smsarjanais.edu.bn/wp-content/uploads/2018/08/Library-3-1.jpg')"}}></div>
 									<div className="box__content__link"><span>Study at SMSIS</span></div>
 								</a>
 							</div>
 							<div className="box__content--col__01 tel__content">
 								<a data-modal="#request">
-									<div className="box__content__image"></div>
+									<div className="box__content__image" style={{ backgroundImage: "url: ('http://www.smsarjanais.edu.bn/wp-content/uploads/2018/09/ICT-Lab-SMSIS-5.jpeg')"}}></div>
 									<div className="box__content__link"><span>REQUEST FORMS</span></div>
 								</a>
 							</div>
 							<div className="box__content--col__02 email__content">
 								<a href="#">
-									<div className="box__content__image"></div>
+									<div className="box__content__image" style={{ backgroundImage: "url: ('http://www.smsarjanais.edu.bn/wp-content/uploads/2018/09/ICT-Lab-SMSIS-6.jpeg')"}}></div>
 									<div className="box__content__link"><span>SEND INQUIRY</span></div>
 								</a>
 							</div>

@@ -9,11 +9,9 @@ class Header extends React.Component {
 		        <div className="inner">
 		        	<div className="logo">
 		        		<figure>
-			        		<img src="https://picsum.photos/seed/school/100" />
-		        			{/*<img src="./assets/img/logo.png" alt="school logo" />*/}
+		        			<img src="./assets/img/logo.png" alt="school logo" />
 		        		</figure>
-		        		<span>TEST SCHOOL</span>
-		        		{/*<span>SERI MULIA SARJANA<br/>INTERNATIONAL SCHOOL</span>*/}
+		        		<span>SERI MULIA SARJANA<br/>INTERNATIONAL SCHOOL</span>
 		        	</div>
 		        	<ul className="list link">
 		        		<li className="link__item no__menu">
