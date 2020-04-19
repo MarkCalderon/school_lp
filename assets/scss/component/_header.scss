@@ -1,0 +1,166 @@
+header {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 5;
+
+	.inner {
+		padding: 0 0 0 10px;
+		box-sizing: border-box;
+		height: 70px;
+		background: $blue;
+		@include flex($ai: center);
+
+		.logo {
+			width: 240px;
+			@include flex($ai: center, $jc: flex-start);
+			user-select: none;
+
+			figure {
+				width: 40px;
+
+				img {
+					width: 100%;
+					height: auto;
+				}
+			}
+
+			span {
+				width: calc(100% - 50px);
+				margin-left: 10px;
+				font: 500 15px $fontFamily;
+				color: $white;
+			}
+		}
+
+		.list {
+
+			&.link {
+				user-select: none;
+				width: calc(100% - 240px);
+				@include flex($jc: flex-end, $ai: center, $fl: nowrap);
+
+				.link__item {
+					@include transition;
+
+					&.no__menu {
+						@include hoverBG;
+					}
+
+					&.is__open {
+						background: $darkblue;
+					}
+
+					button {
+						padding: 0 40px;
+						height: 70px;
+						border: 0;
+						background: none;
+						@include flex($jc: center, $ai: center, $fl: nowrap);
+						box-sizing: border-box;
+						text-decoration: none;
+						color: $white;
+						cursor: pointer;
+
+						span {
+							font: 700 15px $fontFamily;
+							letter-spacing: 0.10em;
+							text-transform: uppercase;
+						}
+					}
+
+					.menu__container {
+						position: absolute;
+						visibility: hidden;
+						opacity: 0;
+						pointer-events: none;
+						padding: 20px 42px;
+						box-sizing: border-box;
+						z-index: 99;
+						top: 70px;
+						left: 0;
+						width: 100%;
+						height: 330px;
+						background: rgba($darkblue, 0.9);
+						@include transition;
+
+						&.is__active {
+							@include transition;
+							visibility: visible;
+							opacity: 1;
+							pointer-events: all;
+						}
+
+						.inner__menu {
+							p {
+								text-align: right;
+
+								span {
+									font: 500 20px $fontFamily;
+									position: relative;
+									color: $white;
+
+									&:after {
+										content: '';
+										position: absolute;
+										bottom: -5px;
+										left: 0;
+										right: 0;
+										width: auto;
+										height: 2px;
+										background: $blue;
+									}
+								}
+
+								&:not(:first-child) {
+									margin-top: 40px;
+								}
+							}
+
+							.inner__list {
+								margin-top: 20px;
+								@include flex($jc: flex-end);
+
+								li {
+									margin-left: 80px;
+
+									button {
+										padding: 0;
+										height: auto;
+										text-align: right;
+										text-transform: uppercase;
+										border: 0;
+										background: none;
+										font: 500 15px $fontFamily;
+										color: $white;
+										@include transition;
+										@include hoverOpacity;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+
+	.menu__content {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		padding: 20px 20px;
+		visibility: hidden;
+		pointer-events: none;
+
+		
+
+		&.is__active {
+			visibility: visible;
+			pointer-events: all;
+		}
+	}
+}
