@@ -46,8 +46,9 @@ class Header extends React.Component {
 		        						<Link to="/education">
 			        						<li><button>LEARNING PATH</button></li>
 		        						</Link>
-		        						<li><button>STUDENT EMPOWERMENT</button></li>
-		        						<li><button>STUDENT SUPPORT</button></li>
+		        						<Link to="/education/nuture">
+			        						<li><button>STUDENT EMPOWERMENT</button></li>
+		        						</Link>
 		        					</ul>					
 		        				</div>
 		        			</div>
@@ -70,10 +71,9 @@ class Header extends React.Component {
 		        			<button><span>Inquiry</span></button>
 		        			<div id="#menu03" className="menu__container">
 		        				<div className="inner__menu">
-		        					<p><span>SCHOOL SERVICE ⬤</span></p>
+		        					<p><span>SERVICES ⬤</span></p>
 		        					<ul className="inner__list">
 		        						<li><a target="_blank" href="http://www.smsarjanais.edu.bn/wp-content/uploads/2020/02/2020-Academic-Calendar-for-parents.pdf">SCHOOL CALENDAR</a></li>
-		        						<li><button href="#">NEW/RENEWAL STUDENT ID</button></li>
 		        					</ul>
 		        					<p><span>DOWNLOADABLE FORMS ⬤</span></p>
 		        					<ul className="inner__list">
@@ -81,11 +81,6 @@ class Header extends React.Component {
 		        						<li><a target="_blank" href="http://www.smsarjanais.edu.bn/wp-content/uploads/2018/08/Expression-of-Interest-Form.pdf">EXPRESSION OF INTEREST</a></li>
 		        						<li><a target="_blank" href="http://www.smsarjanais.edu.bn/wp-content/uploads/2018/07/noticeofwithdrawal.pdf">WITHDRAWAL NOTICE</a></li>
 		        					</ul>
-		        					<p><span>OTHERS ⬤</span></p>
-		        					<ul className="inner__list">
-		        						<li><button href="#">FREQUENTLY ASKED QUESTIONS</button></li>
-		        						<li><button href="#">CAREER</button></li>
-		        					</ul>					
 		        				</div>
 		        			</div>
 		        		</li>

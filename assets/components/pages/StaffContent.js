@@ -1,7 +1,11 @@
 import React from 'react'
 
 class StaffContent extends React.Component {
-
+	
+	componentDidMount() {
+		window.scrollTo(0,0)
+	}
+	
 	render() {
 		return (
 			<main className="other">

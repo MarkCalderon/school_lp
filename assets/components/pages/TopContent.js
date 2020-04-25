@@ -1,6 +1,5 @@
 import React from 'react'
-// import 'swiper/dist/css/swiper.min.css'
-// import Swiper from "swiper"
+import {Link} from 'react-router-dom'
 
 class TopContent extends React.Component {
 
@@ -195,10 +194,10 @@ class TopContent extends React.Component {
 					<section className="learn" data-sv="fade-in">
 						<div className="inner">
 							<div className="box__content study__content">
-								<a href="#">
+								<Link to="/education">
 									<div className="box__content__image" style={ { backgroundImage: "url('http://www.smsarjanais.edu.bn/wp-content/uploads/2018/08/Library-3-1.jpg')"}}>wqdqwqdq</div>
 									<div className="box__content__link"><span>Study at SMSIS</span></div>
-								</a>
+								</Link>
 							</div>
 							<div className="box__content--col__01 tel__content">
 								<a data-modal="#request">
@@ -207,7 +206,7 @@ class TopContent extends React.Component {
 								</a>
 							</div>
 							<div className="box__content--col__02 email__content">
-								<a href="#">
+								<a>
 									<div className="box__content__image" style={{ backgroundImage: "url('http://www.smsarjanais.edu.bn/wp-content/uploads/2018/09/ICT-Lab-SMSIS-6.jpeg')"}}></div>
 									<div className="box__content__link"><span>SEND INQUIRY</span></div>
 								</a>

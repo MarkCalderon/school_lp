@@ -157,11 +157,26 @@ header {
 		visibility: hidden;
 		pointer-events: none;
 
-		
-
 		&.is__active {
 			visibility: visible;
 			pointer-events: all;
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	header {
+		.inner {
+			.logo {
+				span {
+					font-size: 12px;
+				}
+			}
+			.list {
+				&.link {
+					display: none;
+				}
+			}
 		}
 	}
 }

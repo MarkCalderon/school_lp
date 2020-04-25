@@ -99,14 +99,14 @@
 						pointer-events: none;
 						visibility: hidden;
 						opacity: 0;
-						display: none;
+						height: 0;
 						transition: opacity 2s;
 
 						&.is__active {
 							margin-top: 20px;
 							pointer-events: all;
 							opacity: 1;
-							display: block;
+							height: 100%;
 							visibility: visible;
 							animation: fadeIn 1s forwards;
 						}
@@ -121,11 +121,50 @@
 							}
 						}
 
-						.slider {
+						.sliderThumb {
+							padding-bottom: 20px;
+							.swiper-wrapper {
+								.swiper-slide {
+									width: calc(100% / 3);
+									height: 50px;
+									box-sizing: border-box;
+									background: $darkblue;
+									@include flex(center, center);
+									cursor: pointer;
+									@include transition;
+
+									&:nth-child(3n-1) {
+										border-left: 4px solid $white;
+										border-right: 4px solid $white;
+									}
+
+									&:nth-child(n+4) {
+										margin-top: 4px;
+									}
+
+									h4 {
+										font: 500 15px $fontFamily;
+										text-transform: uppercase;
+										color: $white;
+									}
+
+									&.swiper-slide-thumb-active {
+										background: $blue;
+									}
+
+									&:hover {
+										background: $blue;
+									}
+								}
+							}
+						}
+
+						.slider, .sliderWithThumb {
 							overflow: hidden;
 
 							.swiper-wrapper {
 								.swiper-slide {
+
 									h3 {
 										font: 500 30px $fontFamily;
 										padding-bottom: 20px;
@@ -149,7 +188,46 @@
 											display: block;
 										}
 									}
+
+									ol {
+										margin-top: 20px;
+										padding-left: 50px;
+										list-style-type: unset;
+
+										li {
+											font: 100 19px $fontFamily;
+											text-align: justify;
+											line-height: 1.5;
+
+											&:not(:first-child) {
+												padding-top: 10px;
+											}
+										}
+									}
 								}
+							}
+						}
+					}
+				}
+			}
+
+			&.other {
+				.inner {
+					.content {
+						.content__holder {
+							margin-top: 0;
+
+							.sliderThumb {
+								text-align: center;
+
+								.swiper-wrapper {
+								flex-flow: wrap;
+
+									.swiper-slide {
+										width: calc(100% / 3) !important;
+									}
+								}
+
 							}
 						}
 					}

@@ -15,6 +15,7 @@ import HistoryContent from "./../components/pages/HistoryContent"
 import PartnerContent from "./../components/pages/PartnerContent"
 import StaffContent from "./../components/pages/StaffContent"
 import LearningContent from "./../components/pages/LearningContent"
+import NutureContent from "./../components/pages/NutureContent"
 
 class App extends React.Component {
     render() {
@@ -29,7 +30,8 @@ class App extends React.Component {
                     <Route path="/about/mission" component={VisionContent}/>
                     <Route path="/about/partner" component={PartnerContent}/>
                     <Route path="/about/staff" component={StaffContent}/>
-                    <Route path="/education" component={LearningContent}/>
+                    <Route path="/education" exact component={LearningContent}/>\
+                    <Route path="/education/nuture" component={NutureContent}/>
                     <Route path="*" component={TopContent}/>
                 </Switch>
 

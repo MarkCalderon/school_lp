@@ -1,22 +1,50 @@
 import React from 'react'
 
 class LearningContent extends React.Component {
-	
+
 	constructor() {
 		super()
 		this.loadSwiper = this.loadSwiper.bind(this)
 	}
 
 	loadSwiper() {
-	  	var swiper = new Swiper('.slider', {
+		let swiperElements = document.querySelectorAll('.sliderWithThumb');
+
+		swiperElements.forEach(function(item, index) {
+			// console.log(item + 'index: ' + index)
+			let thumbName = 'thumb' + index
+			let galleryName = 'gallery' + index
+
+		  	thumbName = new Swiper('.sliderThumb', {
+		  		spaceBetween: 0,
+		  		slidesPerView: 3,
+		  		watchSlidesVisibility: true,
+		  		watchSlidesProgress: true,
+			});
+
+		  	galleryName = new Swiper('.sliderWithThumb', {
+		  		spaceBetween: 20,
+		  		speed: 1500,
+			  	autoplay: {
+			  		delay: 5000,
+			  		disableOnInteraction: false,
+			  	},
+			  	loop: true,
+			  	effect: 'slide',
+			  	touchRatio: 0,
+			  	thumbs: {
+			  		swiper: thumbName,
+			  	}
+			});
+
+
+		});
+
+	  	var gallery = new Swiper('.slider', {
 	  		speed: 3000,
-	  		spaceBetween: 20,
-		  	autoplay: {
-		  		delay: 3000,
-		  		disableOnInteraction: false,
-		  	},
-		  	loop: true,
+		  	loop: false,
 		  	effect: 'slide',
+		  	touchRatio: 0,
 		});
 	}
 
@@ -42,8 +70,8 @@ class LearningContent extends React.Component {
 	}
 
 	componentDidMount() {
-		// this.loadSwiper()
 		this.tabSelector()
+		window.scrollTo(0,0)
 	}
 
 	render() {
@@ -94,7 +122,14 @@ class LearningContent extends React.Component {
 
 								<div id="#tab02" className="content__holder">
 									<div className="inner">
-										<div className="slider">
+										<div className="sliderThumb">
+											<div className="swiper-wrapper">
+												<div className="swiper-slide"><h4>Cambirdge Primary Curriculum (CPC)</h4></div>
+												<div className="swiper-slide"><h4>UK Based Framework</h4></div>
+												<div className="swiper-slide"><h4>Brunei National Curriculum</h4></div>
+											</div>
+										</div>
+										<div className="sliderWithThumb">
 											<div className="swiper-wrapper">
 												<div className="swiper-slide">
 													<div className="title">
