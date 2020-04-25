@@ -13,6 +13,8 @@ import AboutContent from "./../components/pages/AboutContent"
 import VisionContent from "./../components/pages/VisionContent"
 import HistoryContent from "./../components/pages/HistoryContent"
 import PartnerContent from "./../components/pages/PartnerContent"
+import StaffContent from "./../components/pages/StaffContent"
+import LearningContent from "./../components/pages/LearningContent"
 
 class App extends React.Component {
     render() {
@@ -22,10 +24,13 @@ class App extends React.Component {
 
                 <Switch>
                     <Route path="/" exact component={TopContent}/>
-                    <Route path="/about" component={AboutContent}/>
-                    <Route path="/mission" component={VisionContent}/>
-                    <Route path="/history" component={HistoryContent}/>
-                    <Route path="/partner" component={PartnerContent}/>
+                    <Route path="/about" exact component={HistoryContent}/>
+                    <Route path="/about/principal" component={AboutContent}/>
+                    <Route path="/about/mission" component={VisionContent}/>
+                    <Route path="/about/partner" component={PartnerContent}/>
+                    <Route path="/about/staff" component={StaffContent}/>
+                    <Route path="/education" component={LearningContent}/>
+                    <Route path="*" component={TopContent}/>
                 </Switch>
 
                 <Modal />

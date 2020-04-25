@@ -84,14 +84,80 @@ class TopContent extends React.Component {
 		});
 	}
 
+	/* ---------------------------------------
+	SCROLL TO FUNCTION 
+	---------
+	TO USE:
+	Add attribute data-scroll="#anchorname" to button.
+	Add attribute id=#anchorname" to object/content to scroll to.
+	----------------------------------------*/
+	scroll() {
+	    this.onLoadScroll();
+
+	    let link = document.querySelectorAll('[data-scroll^="#"]');
+	    
+	    for(var i=0;i<link.length;i++) {
+	        link[i].addEventListener('click', function(e) {
+	            let redirectValue = 0;
+	            let value = this.getAttribute('data-scroll');
+	            let target = document.getElementById(value);
+
+	            if(this.getAttribute('data-redirect') != null) {
+	                redirectValue = this.getAttribute('data-redirect');
+	            }
+
+	            if(redirectValue != 0) {
+	                window.location.href = redirectValue;
+	            }
+	            else {
+	                e.preventDefault();
+	                if(target != null) {
+	                    target.scrollIntoView({
+	                        behavior: 'smooth'
+	                    });
+	                }
+	            }
+	        });
+	    }
+	}
+
+	/* ---------------------------------------
+	ON LOAD SCROLL TO FUNCTION 
+	---------
+	TO USE:
+	Add attribute data-redirect="../#id" to button.
+	----------------------------------------*/
+	onLoadScroll() {
+	    // If there is # in URL, loads
+	    if(window.location.href.indexOf("#") > -1) {
+	        let value = window.location.href, scrollValue, target;
+	        // Splits the URL and take the characters after #.
+	        scrollValue = '#' + value.split('#')[1];
+	        target = document.getElementById(scrollValue);
+
+	        if(target != null) {
+	            target.scrollIntoView({
+	                behavior: 'smooth'
+	            });
+
+	            // Remove hash value without load.
+	            let newURL = value.substring(0, value.indexOf('#'));
+	            history.pushState({}, null, newURL);
+	        }
+
+	    }
+	}
+
 	componentDidMount() {
+		window.scrollTo(0,0)
 		this.onLoadVis()
 	    this.scrollToVis()
 	    this.loadSwiper()
+	    this.scroll()
 	}
 	
 	render() {
-		return(
+		return (
 			<main className="top">
 			    <div id="test"></div>
 				<div className="inner">

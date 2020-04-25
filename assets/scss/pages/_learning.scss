@@ -1,0 +1,160 @@
+.education {
+	.inner {
+		.kv {
+			.kv__container {
+				position: relative;
+				width: 100%;
+				height: 400px;
+				@include flex($jc: center, $ai: center);
+				background: $darkblue;
+
+				h1 {
+					position: relative;
+					z-index: 4;
+					text-align: center;
+					font: 500 35px $fontFamily;
+					color: $white;
+					text-shadow: 2px 2px $black;
+				}
+
+				.image {
+					position: absolute;
+					top: 50%;
+					transform: translateY(-50%);
+					left: 0;
+					right: 0;
+					width: 100%;
+					height: 400px;
+					background-size: cover !important;
+					background-position: center 37% !important;
+					background-repeat: no-repeat !important;
+				}
+			}
+		}
+
+		.sub-learn {
+			padding: 0 20px;
+			box-sizing: border-box;
+			margin: 90px auto;
+			width: 100%;
+			max-width: 1140px;
+
+			.inner {
+				.content {
+
+					.button__selector {
+						@include flex;
+						flex-flow: nowrap;
+
+						button {
+							position: relative;
+							width: calc(100% / 2 - 2px);
+							appearance: none;
+							border: 0;
+							outline: 0;
+							background: lightgray;
+							height: 200px;
+							@include flex(center, center);
+							@include transition;
+							background-size: cover;
+							background-position: center;
+							overflow: hidden;
+
+							&:hover {
+								&:after {
+									opacity: 0;
+								}
+							}
+
+							&.is__active {
+								&:after {
+									opacity: 1;
+									background: rgba($blue, 0.7);
+								}
+							}
+
+							&:after {
+								background: rgba($white, 0.6);
+								position: absolute;
+								top: 0;
+								left: 0;
+								width: 100%;
+								height: 100%;
+								content: '';
+								transition: 1s ease;
+							}
+
+							span {
+								position: relative;
+								z-index: 2;
+								font: 500 30px $fontFamily;
+								color: $white;
+								transition: 1s ease;
+								text-shadow: 2px 2px $black;
+							}
+						}
+					}
+
+					.content__holder {
+						pointer-events: none;
+						visibility: hidden;
+						opacity: 0;
+						display: none;
+						transition: opacity 2s;
+
+						&.is__active {
+							margin-top: 20px;
+							pointer-events: all;
+							opacity: 1;
+							display: block;
+							visibility: visible;
+							animation: fadeIn 1s forwards;
+						}
+
+						@keyframes fadeIn {
+							from {
+								opacity: 0;
+							}
+
+							to {
+								opacity: 1;
+							}
+						}
+
+						.slider {
+							overflow: hidden;
+
+							.swiper-wrapper {
+								.swiper-slide {
+									h3 {
+										font: 500 30px $fontFamily;
+										padding-bottom: 20px;
+									}
+
+									p {
+										font: 100 19px $fontFamily;
+										text-align: justify;
+										line-height: 1.5;
+
+										&:not(:first-child) {
+											margin-top: 20px;
+										}
+
+										strong {
+											font-weight: 500;
+											font-size: 30px;
+										}
+
+										small {
+											display: block;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

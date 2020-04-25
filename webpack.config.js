@@ -4,7 +4,9 @@ module.exports = {
     
     devServer: {
         compress: true,
+        hot: true,
         port: 3123,
         historyApiFallback: true,
+      	publicPath: '/',
     },
 }

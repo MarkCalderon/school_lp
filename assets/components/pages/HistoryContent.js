@@ -5,13 +5,14 @@ class HistoryContent extends React.Component {
 	render() {
 		return (
 			<main className="other">
+				<div id="test"></div>
 				<div className="inner">
 					<section className="kv">
 						<div className="inner">
 							<div className="kv__container">
 								<div className="image" 
 								style={{backgroundImage: "url('http://www.smsarjanais.edu.bn/wp-content/uploads/2018/08/all-these-years.jpg')"}}></div>
-								<h1>HISTORY</h1>
+								<h1>ABOUT US</h1>
 							</div>
 						</div>
 					</section>

@@ -224,5 +224,33 @@
 				}
 			}
 		}
+
+		.staff {
+			padding: 0 20px;
+			box-sizing: border-box;
+			margin: 90px auto;
+			width: 100%;
+			max-width: 1140px;
+
+			&.with__image {
+				.inner {
+					@include flex;
+					flex-direction: column;
+
+					figure {
+						max-width: 100%;
+					}
+
+					.title {
+						padding: 20px 0 20px;
+						box-sizing: border-box;
+						width: 100%;
+						h2 {
+							font: 500 30px $fontFamily;
+						}
+					}
+				}
+			}
+		}
 	}
 }
