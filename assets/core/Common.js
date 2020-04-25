@@ -30,6 +30,28 @@ function menu() {
 }
 
 /* ---------------------------------------
+SP MULTI MENU FUNCTION 
+---------
+TO USE:
+Add attribute data-menu="#anchorname" to button.
+Add attribute class=".menu__container" to object/content to allow closing.
+Add attribute id=#anchorname" to object/content to allow opening.
+----------------------------------------*/
+function spmenu() {
+    let link = document.querySelectorAll('[data-spmenu^="#"]');
+    let menuitem = document.querySelectorAll('.menu__container');
+
+    for(let i=0;i<link.length;i++) {
+        link[i].addEventListener('click', function(e) {
+            this.classList.toggle('is__open');
+            let value = this.getAttribute('data-spmenu');
+            let target = document.getElementById(value);
+            target.classList.toggle('is__active');
+        });
+    }
+}
+
+/* ---------------------------------------
 SCROLL TO FUNCTION 
 ---------
 TO USE:
@@ -119,5 +141,6 @@ document.addEventListener("DOMContentLoaded", function() {
     // loadSwiper();
     scroll();
     menu();
+    spmenu();
     // modal();
 });

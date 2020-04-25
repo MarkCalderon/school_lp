@@ -3,6 +3,17 @@ import { Link, Route, Switch } from 'react-router-dom'
 
 class Header extends React.Component {
 
+	menu() {
+		document.getElementById('sp__menu').addEventListener('click', function() {
+			this.classList.toggle('is__active');
+			document.getElementById('sp__menu__list').classList.toggle('is__active')
+		});
+	}
+
+	componentDidMount() {
+		this.menu()
+	}
+
     render() {
 	    return (
 	        <header>
@@ -84,6 +95,38 @@ class Header extends React.Component {
 		        				</div>
 		        			</div>
 		        		</li>
+		        	</ul>
+		        	<div id="sp__menu" className="menu">
+		        		<div className="line"></div>
+		        		<div className="line"></div>
+		        		<div className="line"></div>
+		        	</div>
+		        	<ul id="sp__menu__list" className="list link__sp">
+		        		<Link to="/">
+							<li><span>Home</span></li>
+						</Link>
+							<li data-spmenu="#menu02sp">
+								<span>About</span>
+								<ul id="#menu02sp" class="inner__list">
+	        						<Link to="/about/">
+		        						<li><button>History</button></li>
+	        						</Link>
+	        						<Link to="/about/principal/">
+		        						<li><button>Message from the Principal</button></li>
+	        						</Link>
+	        						<Link to="/about/mission/">
+		        						<li><button>Vision and Mission</button></li>
+	        						</Link>
+	        						<Link to="/about/partner/">
+		        						<li><button>Partners</button></li>
+	        						</Link>
+	        						<Link to="/about/staff/">
+		        						<li><button>Staff</button></li>
+	        						</Link>
+								</ul>
+							</li>
+							<li><span>News</span></li>
+						<li><span>Inquiry</span></li>
 		        	</ul>
 		        </div>
 	        </header>

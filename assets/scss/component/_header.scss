@@ -144,6 +144,14 @@ header {
 					}
 				}
 			}
+
+			&.link__sp {
+				display: none;
+			}
+		}
+
+		.menu {
+			display: none;
 		}
 	}
 
@@ -167,14 +175,123 @@ header {
 @media screen and (max-width: 768px) {
 	header {
 		.inner {
+			height: 50px;
+
 			.logo {
+
+				figure {
+					width: 30px;
+				}
+
 				span {
-					font-size: 12px;
+					font-size: 11px;
 				}
 			}
 			.list {
 				&.link {
 					display: none;
+				}
+
+				&.link__sp {
+					position: fixed;
+					display: block;
+					top: 50px;
+					left: 0;
+					z-index: -1;
+					width: 100%;
+					max-height: 400px;
+					overflow-y: scroll;
+					background: $darkblue;
+					transform: translateY(-100%);
+					pointer-events: none;
+					transition: transform 1s;
+
+					&.is__active {
+						transform: translateY(0);
+						pointer-events: all;
+					}
+
+					li {
+						padding: 18px 0;
+						box-sizing: border-box;
+						text-align: center;
+						background: $darkblue;
+						border-bottom: 1px solid $black;
+
+						&.is__open {
+							background: rgba($blue, 0.5);
+							padding-bottom: 0;
+							border-bottom: 0;
+						}
+
+						span {
+							text-transform: uppercase;
+							font: 500 15px $fontFamily;
+							color: $white;
+						}
+
+						.inner__list {
+							display: none;
+
+							&.is__active {
+								display: block;
+								border-top: 1px solid $black;
+								margin-top: 18px;
+							}
+
+							li {
+								background: $blue;
+								button {
+									appearance: none;
+									border: 0;
+									outline: 0;
+									background: 0;
+									text-transform: uppercase;
+									font: 500 15px $fontFamily;
+									color: $white;
+								}
+							}
+						}
+					}
+				}
+			}
+
+			.menu {
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+				right: 10px;
+				width: 42px;
+				height: 25px;
+				@include flex(center, center);
+
+				.line {
+					width: 25px;
+					height: 1px;
+					background: $white;
+					transition: opacity .1s, transform .3s .2s;
+
+					&:nth-child(2) {
+						margin: 1px auto;
+					}
+				}
+
+				&.is__active {
+					.line {
+						transition: transform .3s,opacity .1s;
+
+						&:nth-child(1) {
+							transform: rotate(45deg) translateY(6px) translateX(7px);
+						}
+
+						&:nth-child(2) {
+							opacity: 0;
+						}
+
+						&:nth-child(3) {
+							transform: rotate(-45deg) translateY(-6px) translateX(7px);
+						}
+					}
 				}
 			}
 		}

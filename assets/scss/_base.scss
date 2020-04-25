@@ -43,6 +43,12 @@ main {
 		height: 70px;
 		width: 100%;
 	}
+
+	@media screen and (max-width: 768px) {
+		&:before {
+			height: 50px;
+		}
+	}
 }
 
 #test {
