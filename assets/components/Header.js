@@ -20,9 +20,8 @@ class Header extends React.Component {
 		        <div className="inner">
 		        	<div className="logo">
 		        		<figure>
-		        			<img src="/assets/img/logo.png" alt="school logo" />
+		        			<img src="/assets/img/logo.svg" alt="school logo" />
 		        		</figure>
-		        		<span>PLACE SCHOOLER</span>
 		        	</div>
 		        	<ul className="list link">
 		        		<li className="link__item no__menu">

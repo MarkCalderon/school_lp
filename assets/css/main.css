@@ -461,17 +461,13 @@ header .inner .logo {
           user-select: none;
 }
 header .inner .logo figure {
-  width: 40px;
+  max-width: 250px;
 }
 header .inner .logo figure img {
   width: 100%;
   height: auto;
-}
-header .inner .logo span {
-  width: calc(100% - 50px);
-  margin-left: 10px;
-  font: 500 15px "Roboto", sans-serif;
-  color: #fff;
+  max-height: 70px;
+  filter: invert(100%);
 }
 header .inner .list.link {
   -webkit-user-select: none;
@@ -602,10 +598,10 @@ header .menu__content.is__active {
     height: 50px;
   }
   header .inner .logo figure {
-    width: 30px;
+    width: 90px;
   }
-  header .inner .logo span {
-    font-size: 11px;
+  header .inner .logo figure img {
+    max-height: 50px;
   }
   header .inner .list.link {
     display: none;
@@ -803,7 +799,29 @@ footer .inner .copyright .inner small a {
   overflow: hidden;
 }
 .top .inner .kv .inner .slider {
+  position: relative;
   height: 600px;
+}
+.top .inner .kv .inner .slider .kv__message {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  z-index: 3;
+  right: 0;
+  margin: auto;
+  width: 100vw;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+.top .inner .kv .inner .slider .kv__message h1 {
+  font: 500 50px "Roboto", sans-serif;
+  text-shadow: 2px 2px #000;
+  color: #fff;
 }
 .top .inner .kv .inner .slider .swiper-wrapper .swiper-slide img {
   width: 100%;
@@ -1002,6 +1020,9 @@ footer .inner .copyright .inner small a {
 @media screen and (max-width: 768px) {
   .top .inner .kv .inner .slider {
     height: 200px;
+  }
+  .top .inner .kv .inner .slider .kv__message h1 {
+    font: 500 30px "Roboto", sans-serif;
   }
   .top .inner .intro {
     margin: 20px auto;

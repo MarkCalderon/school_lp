@@ -165,6 +165,9 @@ class TopContent extends React.Component {
 					<section className="kv" data-sv="fade-in">
 						<div className="inner">
 							<div className="slider">
+								<div className="kv__message">
+									<h1>SCHOOL LANDING PAGE</h1>
+								</div>
 								<div className="swiper-wrapper">
 									<div className="swiper-slide">
 			                            <img src="/assets/img/top/top_img-01.jpg" />

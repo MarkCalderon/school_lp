@@ -17,7 +17,7 @@ function Footer() {
 
         		<section className="copyright">
         			<div className="inner">
-        				<small>&copy; 2020 UI Design by MARK CALDERON | Images used on this website are from <a target="_blank" href="https://unsplash.com/license"> UNSPLASHED.COM</a>, With compliance with the Unsplash License</small>
+        				<small>&copy; 2020 UI Design by MARK CALDERON | Images used on this website are from <a target="_blank" href="https://unsplash.com/license"> UNSPLASHED.COM</a>, With compliance with the Unsplash License <br/> Logo from <a target="_blank" href="https://logoipsum.com/">https://logoipsum.com/</a></small>
         			</div>
         		</section>
         	</div>

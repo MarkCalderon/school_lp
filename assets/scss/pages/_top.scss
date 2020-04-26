@@ -9,7 +9,28 @@
 			.inner {
 
 				.slider {
+					position: relative;
 					height: 600px;
+
+					.kv__message {
+						position: absolute;
+						top: 50%;
+						transform: translateY(-50%);
+						left: 0;
+						z-index: 3;
+						right: 0;
+						margin: auto;
+						width: 100vw;
+						height: 100%;
+						text-align: center;
+						@include flex(center, center);
+
+						h1 {
+							font: 500 50px $fontFamily;
+							text-shadow: 2px 2px $black;
+							color: $white;
+						}
+					}
 
 					.swiper-wrapper {
 						.swiper-slide {
@@ -262,6 +283,14 @@
 				.inner {
 					.slider {
 						height: 200px;
+
+						.kv__message {
+
+							h1 {
+								font: 500 30px $fontFamily;
+							}
+
+						}
 					}
 				}
 			}
