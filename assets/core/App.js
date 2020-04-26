@@ -9,11 +9,9 @@ import './Common.js'
 
 // Specific Pages
 import TopContent from "./../components/pages/TopContent"
-import AboutContent from "./../components/pages/AboutContent"
+import MessageContent from "./../components/pages/MessageContent"
 import VisionContent from "./../components/pages/VisionContent"
 import HistoryContent from "./../components/pages/HistoryContent"
-import PartnerContent from "./../components/pages/PartnerContent"
-import StaffContent from "./../components/pages/StaffContent"
 import LearningContent from "./../components/pages/LearningContent"
 import NutureContent from "./../components/pages/NutureContent"
 
@@ -26,10 +24,8 @@ class App extends React.Component {
                 <Switch>
                     <Route path="/" exact component={TopContent}/>
                     <Route path="/about" exact component={HistoryContent}/>
-                    <Route path="/about/principal" component={AboutContent}/>
+                    <Route path="/about/principal" component={MessageContent}/>
                     <Route path="/about/mission" component={VisionContent}/>
-                    <Route path="/about/partner" component={PartnerContent}/>
-                    <Route path="/about/staff" component={StaffContent}/>
                     <Route path="/education" exact component={LearningContent}/>\
                     <Route path="/education/nuture" component={NutureContent}/>
                     <Route path="*" component={TopContent}/>

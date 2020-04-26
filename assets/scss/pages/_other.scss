@@ -49,9 +49,9 @@
 						width: 300px;
 						height: 300px;
 						background-size: cover;
-						background-position: center -20px;
+						background-position: center;
 						background-repeat: no-repeat;
-						// border-radius: 50%;
+						border-radius: 50%;
 					}
 				}
 
@@ -137,7 +137,7 @@
 							width: 300px;
 							height: 300px;
 							background-size: cover;
-							background-position: center -120px;
+							background-position: center;
 							background-repeat: no-repeat;
 							border-radius: 50%;
 						}
@@ -180,89 +180,26 @@
 				}
 			}
 		}
-
-		.partner {
-			padding: 0 20px;
-			box-sizing: border-box;
-			margin: 90px auto;
-			width: 100%;
-			max-width: 1140px;
-
-			&.with__image {
-				.inner {
-					@include flex;
-
-					figure {
-						max-width: 200px;
-					}
-
-					.content {
-						padding: 0 0 20px;
-						margin-left: 60px; 
-						box-sizing: border-box;
-						width: calc(100% - 360px);
-
-						p {
-							font: 100 19px $fontFamily;
-							text-align: justify;
-							line-height: 1.5;
-
-							&:not(:first-child) {
-								margin-top: 20px;
-							}
-
-							strong {
-								font-weight: 500;
-								font-size: 30px;
-							}
-
-							small {
-								display: block;
-							}
-						}
-					}
-				}
-			}
-		}
-
-		.staff {
-			padding: 0 20px;
-			box-sizing: border-box;
-			margin: 90px auto;
-			width: 100%;
-			max-width: 1140px;
-
-			&.with__image {
-				.inner {
-					@include flex;
-					flex-direction: column;
-
-					figure {
-						max-width: 100%;
-					}
-
-					.title {
-						padding: 20px 0 20px;
-						box-sizing: border-box;
-						width: 100%;
-						h2 {
-							font: 500 30px $fontFamily;
-						}
-					}
-				}
-			}
-		}
 	}
 }
 
 @media screen and (max-width: 768px) {
 	.other {
 		.inner {
-			.message, .mission, .history, .partner {
+			.kv {
+				.kv__container {
+					height: 200px;
+
+					.image {
+						height: 200px;
+					}
+				}
+			}
+			.message, .mission, .history {
 				margin-bottom: 30px;
 
 				&:not(:first-child) {
-					margin-top: 30px;
+					margin-top: 10px;
 				}
 
 				.inner {

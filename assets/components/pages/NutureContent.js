@@ -73,6 +73,8 @@ class NutureContent extends React.Component {
 		this.tabSelector()
 		this.loadSwiper()
 		window.scrollTo(0,0)
+		document.getElementById('sp__menu__list').classList.remove('is__active')
+		document.getElementById('sp__menu').classList.remove('is__active')
 	}
 
 	render() {
@@ -84,7 +86,7 @@ class NutureContent extends React.Component {
 						<div className="inner">
 							<div className="kv__container">
 								<div className="image" 
-								style={{backgroundImage: "url('/assets/img/education/education_kv.jpg')"}}></div>
+								style={{backgroundImage: "url('/assets/img/education/nuture_img-01.jpg')"}}></div>
 								<h1>STUDENT EMPOWERMENT</h1>
 							</div>
 						</div>
@@ -112,7 +114,7 @@ class NutureContent extends React.Component {
 														<h3>Extra Curricular Activities (ECA)</h3>
 													</div>
 													<div className="content">
-														<p>The school offers more ECA programme for Primary students every Saturday that will provide opportunities to all students with different skills. It enriches our students’ time at school while acquiring social skills such as team work and leadership.</p>
+														<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam fringilla ligula in semper. Nulla massa dui, euismod ut ex ac, sodales luctus nibh. Aliquam euismod efficitur pellentesque. Morbi mauris ex, consequat et est in, elementum rhoncus sem. Integer auctor justo fermentum molestie tincidunt. Ut tincidunt massa vitae orci finibus, at sollicitudin risus vestibulum. Nunc a nisl quis felis tincidunt maximus. Sed diam leo, rhoncus eu ante vitae, ultrices feugiat justo. Phasellus pulvinar maximus odio, ac malesuada dui convallis vitae. Nullam molestie aliquam dignissim. Nunc quis lectus id lacus interdum ultrices a vel tortor. Aliquam erat volutpat. Donec ullamcorper ante diam, pulvinar molestie est euismod quis.</p>
 													</div>
 												</div>
 
@@ -121,7 +123,7 @@ class NutureContent extends React.Component {
 														<h3>Student Council</h3>
 													</div>
 													<div className="content">
-														<p>The voice of the student body is the Student Council who serve as positive role models to their peers. From nomination to voting, Year 3-6 students get a chance to participate in the decision-making process. Elected members of the Student Council undergo leadership training to equip themselves with the right skills in planning and running the school events to improve the student life and foster a close community.</p>
+														<p>Pellentesque lacinia pharetra lectus vel aliquet. Proin non eros id sapien laoreet congue id vitae ligula. Nullam suscipit, purus et congue accumsan, augue ligula vestibulum enim, vel lobortis eros lorem quis purus. Nunc eu nunc sollicitudin, ultricies felis ac, lacinia augue. Nunc lectus nisi, posuere eu ex id, faucibus interdum orci. Quisque ullamcorper nec magna in pellentesque. Etiam luctus quis urna nec bibendum. Pellentesque eu pellentesque nisl. Duis a nisi vitae enim tincidunt efficitur id quis ante. Donec eget neque porttitor erat viverra mollis. Proin mattis dui quam, ac ultrices felis gravida eget. Nunc ac volutpat metus, id viverra nunc. Maecenas scelerisque tortor ut ultricies ullamcorper. Sed id imperdiet justo. Suspendisse sagittis sit amet arcu a scelerisque. Integer velit metus, tincidunt quis lacus vitae, consectetur semper risus.</p>
 													</div>
 												</div>
 
@@ -130,7 +132,7 @@ class NutureContent extends React.Component {
 														<h3>Junior Librarians</h3>
 													</div>
 													<div className="content">
-														<p>Selected upper primary students are given special responsibilities to help run the library during break time. They enthusiastic junior librarians are trained to issue and return books as well as promote reading to fellow students.  Moreover, they find ways to encourage more learners to come to the library.</p>
+														<p>Morbi aliquet feugiat enim eu lobortis. Maecenas ut malesuada elit. Nunc in ex augue. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam pellentesque lorem ac lacus lacinia, sed egestas est mattis. Donec eget dolor et turpis eleifend porttitor. Aliquam vitae sodales velit. Praesent vel imperdiet ipsum, vitae auctor urna. Duis quis magna ut diam luctus auctor. Etiam scelerisque ut velit dictum mattis. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
 													</div>
 												</div>
 
@@ -139,7 +141,7 @@ class NutureContent extends React.Component {
 														<h3>Peer Counsellors</h3>
 													</div>
 													<div className="content">
-														<p>Youngsters are likely to share concerns with peers than adults at school. Recognising this crucial need, we empower those students who are socially aware and emotionally balanced to be Peer Counsellors. They are taught how to initiate supportive interactions by engaging with their peers through academic tutoring and conflict.</p>
+														<p>Nulla blandit nibh sit amet tempor tempor. Nullam ac nisi erat. Phasellus quis velit in diam congue laoreet. Cras imperdiet tellus eget fringilla dapibus. Praesent tellus metus, tincidunt sed magna ut, vestibulum interdum ante. Quisque sapien justo, faucibus eget nisi in, iaculis aliquam neque. Nunc tempor neque sed nulla volutpat tincidunt. Praesent ultricies rhoncus cursus.</p>
 													</div>
 												</div>
 
@@ -148,7 +150,7 @@ class NutureContent extends React.Component {
 														<h3>Student-Led Conferences (SLCs)</h3>
 													</div>
 													<div className="content">
-														<p>SLC is a student-led, teacher-facilitated conference designed to provide opportunities for our students to monitor, reflect on their learning progress and take responsibility for their learning by sharing the process with their parents.</p>
+														<p>Mauris tristique tempor quam vel posuere. Duis quis dolor ipsum. Etiam vestibulum tincidunt dolor, vitae dapibus erat tincidunt a. Nam semper est hendrerit felis egestas, nec rhoncus risus porta. Vivamus gravida, leo sed elementum faucibus, dolor lectus egestas augue, sed viverra purus orci et eros. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Proin placerat, elit eget aliquet condimentum, mauris nisl pretium lectus, sit amet convallis orci mauris id ante. Fusce interdum euismod magna, sed pellentesque leo lacinia in. Proin at quam arcu. Nulla ornare tempus enim, a hendrerit diam luctus vitae. Vestibulum bibendum sapien vel quam imperdiet condimentum. Suspendisse potenti. Aliquam erat volutpat. Quisque rutrum nisi ac lorem convallis, elementum facilisis arcu placerat. Fusce eget libero scelerisque, gravida eros vitae, faucibus libero. Sed imperdiet augue at massa porttitor, quis interdum nisi tempus.</p>
 													</div>
 												</div>
 
@@ -157,8 +159,8 @@ class NutureContent extends React.Component {
 														<h3>Modern Foreign Language</h3>
 													</div>
 													<div className="content">
-														<p>Acquisition of a second language is highly encouraged in our school. Studying Bahasa Melayu, the national language of our host country is integrated into the syllabus from Kindergarten 2 to Year 6. It promotes appreciation and understanding of Bruneian culture.  Learning this language completes the immersive, cultural learning experience of our students. Students take with them a tangible benefit of their time spent in Brunei.</p>
-														<p>Apart from Bahasa Melayu, Mandarin is another language that is offered as an elective.</p>
+														<p>Integer id mauris ut magna dignissim posuere. Sed at leo quis tortor suscipit laoreet a eu ante. Suspendisse commodo at metus sit amet ultrices. Nulla eu hendrerit sem, quis efficitur risus. Cras sit amet lacus sit amet libero interdum tincidunt. Fusce sodales fringilla ligula, non commodo dolor blandit id. Duis vel fermentum ante. Cras sed lectus turpis. Aenean eleifend dapibus risus, id congue augue. Phasellus ultricies congue lacus, ac tincidunt odio varius a.</p>
+														<p>Morbi aliquet feugiat enim eu lobortis. Maecenas ut malesuada elit. Nunc in ex augue. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam pellentesque lorem ac lacus lacinia, sed egestas est mattis. Donec eget dolor et turpis eleifend porttitor. Aliquam vitae sodales velit. Praesent vel imperdiet ipsum, vitae auctor urna. Duis quis magna ut diam luctus auctor. Etiam scelerisque ut velit dictum mattis. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
 													</div>
 												</div>
 											</div>

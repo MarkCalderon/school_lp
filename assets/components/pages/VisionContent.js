@@ -4,6 +4,8 @@ class VisionContent extends React.Component {
 	
 	componentDidMount() {
 		window.scrollTo(0,0)
+		document.getElementById('sp__menu__list').classList.remove('is__active')
+		document.getElementById('sp__menu').classList.remove('is__active')
 	}
 	
 	render() {
@@ -15,7 +17,7 @@ class VisionContent extends React.Component {
 						<div className="inner">
 							<div className="kv__container">
 								<div className="image" style=
-								{{ backgroundImage: "url('http://www.smsarjanais.edu.bn/wp-content/uploads/2018/08/MVE-1.jpg')" }}></div>
+								{{ backgroundImage: "url('/assets/img/mission/mission_img-01.jpg')" }}></div>
 								<h1>VISION AND MISSION</h1>
 							</div>
 						</div>
@@ -25,9 +27,9 @@ class VisionContent extends React.Component {
 						<div className="inner">
 							<div className="content">
 								<p><strong>VISION</strong></p>
-								<p>Seri Mulia Sarjana International School shall be at the forefront in providing quality international education in Brunei Darussalam. We envision a community of learners involving students, parents, teachers, and staff that are engaged, together aspiring for excellence in an environment that is positive and nurturing.</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris gravida, turpis ut ultrices sagittis, tellus mauris aliquam orci, ut aliquet lorem purus quis est. Aenean ut lorem nec neque condimentum sodales in sed libero. Nam varius vestibulum viverra. Aenean tempor, mauris eu vulputate imperdiet, nulla quam fermentum felis, et pretium leo ipsum a est. Quisque rutrum metus cursus sem feugiat, eget ornare augue venenatis. Donec arcu nulla, venenatis id mi at, fermentum vulputate tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis turpis quam. Nunc rhoncus tortor in viverra placerat.</p>
 								<p><strong>MISSION</strong></p>
-								<p>Seri Mulia Sarjana International School aims to provide quality international education accessible to many. We are committed to the development of the whole child; encouraging excellence in all areas by delivering a curriculum that is strong academically and enriched with arts and sports. We do this in an environment that values each child as an individual and espousing global citizenship and social awareness throughout the school community.</p>
+								<p>Nam risus erat, bibendum a aliquet vitae, lobortis elementum urna. Pellentesque vitae tortor elit. Donec pulvinar tempus odio, sed pellentesque odio condimentum vel. Maecenas nec ante eu purus aliquet finibus ac at ante. Nulla bibendum mollis enim eget commodo. Duis consectetur nisl pulvinar tempus congue. Praesent at leo eget lorem facilisis aliquam. Maecenas blandit orci sed pretium pretium. Ut a bibendum lectus. Donec vestibulum sem id quam eleifend, sed porttitor nisi facilisis. Curabitur finibus eleifend ex non rhoncus.</p>
 							</div>
 						</div>
 					</section>

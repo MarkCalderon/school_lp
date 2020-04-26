@@ -153,6 +153,8 @@ class TopContent extends React.Component {
 	    this.scrollToVis()
 	    this.loadSwiper()
 	    this.scroll()
+	    document.getElementById('sp__menu__list').classList.remove('is__active')
+	    document.getElementById('sp__menu').classList.remove('is__active')
 	}
 	
 	render() {
@@ -165,16 +167,16 @@ class TopContent extends React.Component {
 							<div className="slider">
 								<div className="swiper-wrapper">
 									<div className="swiper-slide">
-			                            <img src="http://www.smsarjanais.edu.bn/wp-content/uploads/2019/02/Main-Cover-1.jpg" />
+			                            <img src="/assets/img/top/top_img-01.jpg" />
 									</div>
 									<div className="swiper-slide">
-			                            <img src="http://www.smsarjanais.edu.bn/wp-content/uploads/2019/02/Main-Cover-2.jpg" />
+			                            <img src="/assets/img/top/top_img-02.jpg" />
 									</div>
 									<div className="swiper-slide">
-			                            <img src="http://www.smsarjanais.edu.bn/wp-content/uploads/2019/02/Main-Cover-3.jpg" />
+			                            <img src="/assets/img/top/top_img-03.jpg" />
 									</div>
 									<div className="swiper-slide">
-			                            <img src="http://www.smsarjanais.edu.bn/wp-content/uploads/2019/02/Main-Cover-4.jpg" />
+			                            <img src="/assets/img/top/top_img-04.jpg" />
 									</div>
 								</div>
 							</div>
@@ -185,8 +187,8 @@ class TopContent extends React.Component {
 					<section className="intro" data-sv="fade-in">
 						<div className="inner">
 							<div className="title__box">
-								<h4>A Truly International Education Embedded with Uniquely Asian Values</h4>
-								<p>Seri Mulia Sarjana International School is among the leading private international schools in Brunei Darussalam. We are an international school in a multicultural society that is committed to encouraging Excellence, instilling Global Citizenship, and promoting Social Awareness.</p>
+								<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum necessitatibus praesentium, ex nam reiciendis? Inventore esse saepe qui sint, mollitia nihil consequatur ratione excepturi officiis vero. Modi, temporibus fuga impedit!</p>
 							</div>
 						</div>
 					</section>
@@ -195,19 +197,19 @@ class TopContent extends React.Component {
 						<div className="inner">
 							<div className="box__content study__content">
 								<Link to="/education">
-									<div className="box__content__image" style={ { backgroundImage: "url('http://www.smsarjanais.edu.bn/wp-content/uploads/2018/08/Library-3-1.jpg')"}}>wqdqwqdq</div>
-									<div className="box__content__link"><span>Study at SMSIS</span></div>
+									<div className="box__content__image" style={ { backgroundImage: "url('/assets/img/education/education_kv.jpg')"}}></div>
+									<div className="box__content__link"><span>Study at Placeschooler</span></div>
 								</Link>
 							</div>
 							<div className="box__content--col__01 tel__content">
 								<a data-modal="#request">
-									<div className="box__content__image" style={{ backgroundImage: "url('http://www.smsarjanais.edu.bn/wp-content/uploads/2018/09/ICT-Lab-SMSIS-5.jpeg')"}}></div>
+									<div className="box__content__image" style={{ backgroundImage: "url('/assets/img/education/nuture_img-01.jpg')"}}></div>
 									<div className="box__content__link"><span>REQUEST FORMS</span></div>
 								</a>
 							</div>
 							<div className="box__content--col__02 email__content">
 								<a>
-									<div className="box__content__image" style={{ backgroundImage: "url('http://www.smsarjanais.edu.bn/wp-content/uploads/2018/09/ICT-Lab-SMSIS-6.jpeg')"}}></div>
+									<div className="box__content__image" style={{ backgroundImage: "url('/assets/img/mission/mission_img-01.jpg')"}}></div>
 									<div className="box__content__link"><span>SEND INQUIRY</span></div>
 								</a>
 							</div>
@@ -218,22 +220,22 @@ class TopContent extends React.Component {
 						<div className="inner">
 							<h4 className="title">NEWS</h4>
 							<div className="news__list">
-								<a href="" className="news__list__item">
+								<a className="news__list__item">
 									<span className="date">2020.11.04</span>
 									<span className="category highlight">HIGHLIGHT</span>
 									<span className="content">Website redesign and launched on 2020!</span>
 								</a>
-								<a href="" className="news__list__item">
+								<a className="news__list__item">
 									<span className="date">2020.11.04</span>
 									<span className="category education">EDUCATION</span>
 									<span className="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda recusandae voluptas, reprehenderit fugiat provident. Dicta veritatis eaque quod quidem, quos, rerum ducimus numquam sapiente eum nam enim quo, esse soluta!</span>
 								</a>
-								<a href="" className="news__list__item">
+								<a className="news__list__item">
 									<span className="date">2020.11.04</span>
 									<span className="category announcement">ANNOUNCEMENT</span>
 									<span className="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda recusandae voluptas, reprehenderit fugiat provident. Dicta veritatis eaque quod quidem, quos, rerum ducimus numquam sapiente eum nam enim quo, esse soluta!</span>
 								</a>
-								<a href="" className="news__list__item">
+								<a className="news__list__item">
 									<span className="date">2020.11.04</span>
 									<span className="category service">SERVICE</span>
 									<span className="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda recusandae voluptas, reprehenderit fugiat provident. Dicta veritatis eaque quod quidem, quos, rerum ducimus numquam sapiente eum nam enim quo, esse soluta!</span>

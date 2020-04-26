@@ -4,6 +4,7 @@ import Iframe from 'react-iframe'
 function Footer() {
     return (
         <footer>
+            <div id="scrollUp" data-scroll="#top" ></div>
         	<div className="inner">
         		<section className="map">
         			<div className="inner">
@@ -16,7 +17,7 @@ function Footer() {
 
         		<section className="copyright">
         			<div className="inner">
-        				<small>&copy; 2020 UI Design by MARK CALDERON</small>
+        				<small>&copy; 2020 UI Design by MARK CALDERON | Images used on this website are from <a target="_blank" href="https://unsplash.com/license"> UNSPLASHED.COM</a>, With compliance with the Unsplash License</small>
         			</div>
         		</section>
         	</div>

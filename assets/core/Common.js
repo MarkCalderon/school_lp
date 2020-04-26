@@ -39,7 +39,6 @@ Add attribute id=#anchorname" to object/content to allow opening.
 ----------------------------------------*/
 function spmenu() {
     let link = document.querySelectorAll('[data-spmenu^="#"]');
-    let menuitem = document.querySelectorAll('.menu__container');
 
     for(let i=0;i<link.length;i++) {
         link[i].addEventListener('click', function(e) {
@@ -137,10 +136,26 @@ function modal() {
     });
 }
 
+function scrollUp() {
+    window.addEventListener('scroll', function(e){
+        let bodyRect = document.body.getBoundingClientRect();
+        let scrollButton = document.getElementById('scrollUp');
+        // console.log('Top Line is ' + bodyRect.top + ' vertical pixels from root.');
+
+        if(bodyRect.top < -50) {
+            scrollButton.classList.add('is__active');
+        }
+        else {
+            scrollButton.classList.remove('is__active');
+        }
+    });
+}
+
 document.addEventListener("DOMContentLoaded", function() {
     // loadSwiper();
     scroll();
     menu();
     spmenu();
+    scrollUp();
     // modal();
 });

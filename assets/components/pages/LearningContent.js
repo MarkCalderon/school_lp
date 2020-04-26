@@ -27,7 +27,7 @@ class LearningContent extends React.Component {
 		  		speed: 1500,
 			  	autoplay: {
 			  		delay: 5000,
-			  		disableOnInteraction: false,
+			  		disableOnInteraction: true,
 			  	},
 			  	loop: true,
 			  	effect: 'slide',
@@ -72,6 +72,8 @@ class LearningContent extends React.Component {
 	componentDidMount() {
 		this.tabSelector()
 		window.scrollTo(0,0)
+		document.getElementById('sp__menu__list').classList.remove('is__active')
+		document.getElementById('sp__menu').classList.remove('is__active')
 	}
 
 	render() {
@@ -110,9 +112,9 @@ class LearningContent extends React.Component {
 														<h3>Early Years Foundation Stage</h3>
 													</div>
 													<div className="content">
-														<p>Early Years Foundation Stage (EYFS) is an international standardised, educational programme designed as a gradual introduction to a life-long learning and formal instruction. EYFS sets standards to ensure that children learn and develop well in a healthy and safe environment as they begin to optimize their potentials. It stimulates learners’ “school readiness” and provides them broad range of knowledge and skills that strongly supports the right foundation for good future progress throughout school and life.</p>
-														<p>The programme is taught in a thematic approach where it works around two learning areas; prime and specific. The prime areas (Physical, Social and Emotional Development, Communication and Language and Physical Development) are substantial because they lay the foundations for children’s success in all other areas of learning and of life. Specific areas (Literacy, Mathematics, Knowledge and Understanding the World and Creative Development) provide the range of experiences and opportunities for children to broaden their content knowledge and critical thinking skills.</p>
-														<p>Most significantly, EYFS recognizes the value of play as it provides array of avenues for purposeful learning and various opportunities to allow them to connect to their work environments, furthermost to the real world.</p>
+														<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla hendrerit id erat in gravida. Donec eu ipsum ac sem finibus facilisis id in lectus. Fusce congue purus ut nisl auctor, non aliquam nunc accumsan. Morbi finibus lacus at varius rhoncus. Nam posuere, sapien ut egestas ullamcorper, nibh arcu congue urna, vulputate feugiat lacus ligula quis nunc. Nulla rhoncus augue sapien, a lobortis augue tincidunt nec. Nulla tincidunt risus id viverra finibus.</p>
+														<p>Quisque interdum sodales faucibus. Mauris ac justo ut velit sodales tristique. Morbi orci libero, laoreet at mi non, luctus blandit libero. Quisque vitae justo vitae ante sollicitudin eleifend. Curabitur tempor augue iaculis felis ullamcorper convallis ut sit amet nunc. Aliquam ullamcorper est eget nisl blandit pretium. Cras euismod pretium vulputate.</p>
+														<p>Curabitur nec tempus ipsum, id blandit est. Duis porttitor tellus vel dignissim varius. Curabitur sagittis tristique sapien quis aliquam. Integer erat felis, euismod id nisl in, placerat ultrices dolor. Mauris tempus orci turpis, a tincidunt orci fringilla a. Aenean maximus ornare sapien cursus condimentum. Pellentesque fermentum porttitor dapibus. Integer sed augue pretium, ultricies risus id, auctor odio. Sed aliquet euismod tortor tincidunt feugiat. Maecenas tincidunt nisi risus, non pulvinar arcu accumsan ut. Morbi ut arcu est. Donec ultrices a ipsum et fringilla. Suspendisse ex leo, elementum sit amet turpis at, porta eleifend ante.</p>
 													</div>
 												</div>
 											</div>
@@ -136,14 +138,13 @@ class LearningContent extends React.Component {
 														<h3>Cambridge Primary Curriculum (CPC)</h3>
 													</div>
 													<div className="content">
-														<p>Primary classes are running on Cambridge Primary Programme (CPP) since 2013 for English, Mathematics, Science and ICT Starters subjects. This programme is developed by University of Cambridge and designed for young students of Primary levels. Cambridge Primary Programme helps learners to become confident, responsible, reflective, innovative and engaged. In addition to that, CPP provides a solid foundation for later stages of education.</p>
-														<p>Cambridge Primary offers integrated assessment. The assessment structure tracks learner progression throughout primary education. The types of assessment within the Cambridge Primary Stages are:</p>
+														<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut pharetra magna. Etiam maximus pellentesque varius. Integer volutpat, velit a malesuada suscipit, orci dui condimentum turpis, elementum venenatis nisi dui sed quam. Sed pulvinar, mauris sed laoreet molestie, dolor orci aliquam tellus, ac posuere eros ligula et nisi. Nullam vitae dolor pretium odio ullamcorper euismod sit amet eu velit. Nulla id ante lobortis, mattis orci at, bibendum turpis. Nunc nec facilisis erat. Proin gravida sodales nisi et porttitor. Praesent ac urna maximus, ultrices nibh vel, varius elit. Aenean ullamcorper dui a ligula blandit, non maximus nibh bibendum. Phasellus vitae urna luctus, finibus urna sed, mollis ante. Donec semper ligula ac gravida posuere. Morbi in nisi sit amet arcu molestie bibendum. Donec scelerisque, ipsum dictum malesuada eleifend, erat ligula efficitur purus, sed hendrerit enim justo at magna. Nunc id rhoncus mi. Maecenas id imperdiet sem.</p>
 														<ol>
-															<li>Cambridge Primary Progression Tests: A series of tests from stages 3 to 6, which is used within the school to monitor progress of individuals and classes of learners.</li>
-															<li>Cambridge Primary Checkpoint: An innovative diagnostic testing service designed to help students learn by providing comprehensive feedback on their strengths and weaknesses in the key curriculum areas. Cambridge Primary Checkpoint is generally taken at the end of Stage 6.</li>
-															<li>Cambridge ICT Starters: Assess students through a structured scheme of assessment, operating at three levels namely Initial steps, Next steps and On track.</li>
+															<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+															<li>Vestibulum interdum nunc ac mauris cursus, at dignissim odio tristique.</li>
+															<li>Duis posuere massa eget purus maximus, quis ullamcorper ante elementum.</li>
 														</ol>
-														<p>Each module of syllables contains Assessment Criteria, which must be met to achieve a Pass or Merit, and an Example Assessment Activity.</p>
+														<p>Morbi vitae dui id metus interdum venenatis quis eu ante. Morbi facilisis condimentum odio, eget rutrum lectus luctus condimentum. Donec tempus pulvinar nibh, a consectetur ipsum vestibulum sed. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum vestibulum posuere nunc. Aenean condimentum libero et vestibulum sagittis. Phasellus malesuada, ligula sed vulputate pharetra, leo nunc rhoncus orci, a cursus leo magna et urna. Praesent egestas, nulla quis pharetra elementum, lorem neque dapibus metus, vitae gravida leo augue eu augue. Aliquam hendrerit lorem sed odio sagittis posuere. Mauris et erat sed odio eleifend fermentum vel pulvinar velit. Donec et lectus facilisis ex tincidunt dignissim non id enim.</p>
 													</div>
 												</div>
 
@@ -152,8 +153,8 @@ class LearningContent extends React.Component {
 														<h3>UK Based Framework</h3>
 													</div>
 													<div className="content">
-														<p>The school adopts the National Curriculum in England for non-core subjects: PSHE, Social Studies, Music, Physical Education and Art and Design.</p>
-														<p>The national curriculum provides learners with an introduction to the essential knowledge that they need to be educated citizens. It provides an outline of core knowledge around which teachers can develop exciting and stimulating lessons to promote the development of learners’ knowledge, understanding and skills as part of the wider school curriculum.</p>
+														<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed hendrerit tortor nec ante tincidunt tincidunt. Vestibulum finibus arcu justo, eget varius urna viverra sit amet. Praesent fringilla ac est sed tincidunt. Sed cursus consectetur nibh, quis consectetur diam placerat at. Curabitur orci lorem, ornare ut posuere ac, faucibus a elit. Quisque vel odio tincidunt, sollicitudin augue ut, suscipit mauris. Nam elementum interdum purus ac luctus. Donec feugiat eu neque pellentesque pellentesque. Etiam blandit luctus nibh in egestas.</p>
+														<p>Ut maximus, magna ut faucibus malesuada, nulla quam vestibulum quam, sit amet hendrerit magna sem id massa. In pellentesque mi in velit euismod auctor. Nunc non ultrices arcu. Aliquam sit amet rhoncus felis. Morbi sed tempus elit. Nulla consequat ex non urna auctor, et sodales ipsum tincidunt. In vel mauris nisl. Sed nec pulvinar nisi. Curabitur erat ex, blandit iaculis iaculis sed, porta blandit sem. Morbi ac augue eu est condimentum posuere. Ut pharetra mauris eget enim mollis lobortis.</p>
 													</div>
 												</div>
 
@@ -162,8 +163,8 @@ class LearningContent extends React.Component {
 														<h3>Brunei National Curriculum</h3>
 													</div>
 													<div className="content">
-														<p>MIB, Bahasa Melayu and Islamic Religious Knowledge follows the SPN 21 national curriculum. These subjects are COMPULSORY to all local and expatriate Muslim students in the school.</p>
-														<p>SPN 21 is the acronym for Sistem Pendidikan Negara Abad Ke-21, The National Education System for the 21st Century which has been approved by the Ministry of Education, Brunei Darussalam. It is broad, balanced, relevant and differentiated, and takes each individual’s strengths and weaknesses into account whilst making provision for progression and continuity.</p>
+														<p>Fusce malesuada neque vitae euismod blandit. Fusce suscipit luctus erat at porttitor. Aliquam efficitur tristique eros, ut vehicula ipsum pellentesque tempor. Nulla convallis ipsum sed nunc dictum, sit amet lobortis leo tempus. Praesent eu consequat libero. Vivamus facilisis, ante nec dignissim facilisis, risus ligula varius felis, a maximus lacus magna at quam. Nullam vel semper felis. Etiam dictum tincidunt metus ut commodo. Curabitur ex diam, eleifend quis justo vitae, scelerisque mollis ex. In nulla nisi, varius vitae mauris id, ultricies tincidunt sem. Morbi placerat orci non turpis luctus, ut ornare sapien lobortis. Aliquam sit amet consequat purus, non sollicitudin diam. Curabitur vitae malesuada enim. In dui sapien, venenatis et volutpat sit amet, convallis in dui.</p>
+														<p>In tristique auctor ligula, vitae viverra erat tincidunt a. Pellentesque sollicitudin, enim eu tempor efficitur, lacus nisl facilisis lorem, in ullamcorper urna risus sit amet sem. Sed consectetur aliquam urna, at pulvinar mi accumsan semper. Pellentesque sit amet lectus justo. Quisque condimentum orci ac eros ultrices faucibus. Nulla efficitur quis massa quis ultricies. Aliquam metus leo, lacinia ut accumsan a, tincidunt in sem. Donec sed tempus lacus. Vestibulum rhoncus hendrerit nisl, et lobortis turpis congue non. Phasellus ultrices tincidunt purus nec blandit.</p>
 													</div>
 												</div>
 											</div>

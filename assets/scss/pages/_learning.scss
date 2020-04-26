@@ -236,3 +236,74 @@
 		}
 	}
 }
+
+@media screen and (max-width: 768px) {
+	.education {
+
+		.inner {
+			.kv {
+				.kv__container {
+					height: 200px;
+
+					.image {
+						height: 200px;
+					}
+				}
+			}
+
+			.sub-learn {
+				margin-top: 10px;
+
+				.inner {
+					.content {
+						.button__selector {
+							.button {
+								height: 150px;
+								span {
+									font-size: 15px;
+								}
+							}
+						}
+
+						.content__holder {
+							.inner {
+
+								h3 {
+									font-size: 16px !important;
+								}
+								p {
+									font-size: 14px !important;
+								}
+								
+								ol {
+									padding-left: 20px !important;
+
+									li {
+										font-size: 14px !important;
+									}
+
+								}
+
+								.sliderThumb {
+									.swiper-wrapper {
+										.swiper-slide {
+											box-sizing: border-box;
+											padding: 5px;
+											min-height: 65px;
+											height: auto;
+
+											h4 {
+												font-size: 11px !important;
+												text-align: center;
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

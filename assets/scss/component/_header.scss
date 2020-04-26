@@ -199,12 +199,13 @@ header {
 					left: 0;
 					z-index: -1;
 					width: 100%;
-					max-height: 400px;
-					overflow-y: scroll;
+					max-height: calc(100vh - 50px);
+					overflow-y: auto;
 					background: $darkblue;
 					transform: translateY(-100%);
 					pointer-events: none;
 					transition: transform 1s;
+					user-select: none;
 
 					&.is__active {
 						transform: translateY(0);
@@ -241,7 +242,8 @@ header {
 
 							li {
 								background: $blue;
-								button {
+
+								a, button {
 									appearance: none;
 									border: 0;
 									outline: 0;
@@ -249,6 +251,7 @@ header {
 									text-transform: uppercase;
 									font: 500 15px $fontFamily;
 									color: $white;
+									text-decoration: none;
 								}
 							}
 						}
